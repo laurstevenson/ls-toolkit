@@ -1,0 +1,45 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+div.home-section {
+  text-decoration: none;
+  border: solid black;
+  border-width: 1px;
+  padding: 20px;
+  margin: 40px;
+}
+
+img.icon {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
+}
+
+img.intro {
+  opacity: 1;
+}
+
+/* Centered text */
+.centered {
+  border: solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.5em;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  padding: 5px;
+}
