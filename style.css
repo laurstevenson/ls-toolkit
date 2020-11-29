@@ -5,9 +5,31 @@ body {
   margin: 2em;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+h1.neatFont {
+  font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h2.neatFont {
+  font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 1;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h4.neatFont2 {
+  font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1;
+  padding-top: 10px;
 }
 
 div.home-section {
@@ -30,12 +52,54 @@ img.intro {
   opacity: 1;
 }
 
+img.initial {
+ padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p.beBold {
+  padding-top: 20px;
+}
+
 p.is-hero {
   font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
   font-weight: normal;
   font-size: 2.25em;
   line-height: 1;
   padding: 20px;
+}
+
+p.is-hero2 {
+  font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
+  font-weight: normal;
+  font-size: 1.75em;
+  line-height: 1;
+  padding: 10px;
+}
+
+p.fancyShow {
+  padding-top: 120px;
+}
+
+p.fancyShow2 {
+  padding-top: 20px;
+}
+
+p.spacing-info {
+  padding-top: 60px;
+}
+
+ul.fancyShow2 {
+  padding-top: 25px;
 }
 
 /* Centered text */
