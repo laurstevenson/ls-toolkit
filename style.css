@@ -102,6 +102,10 @@ ul.fancyShow2 {
   padding-top: 25px;
 }
 
+.spacing {
+  padding-bottom: 20px;
+}
+
 /* Centered text */
 /* .centered {
   border: solid black;
@@ -115,3 +119,19 @@ ul.fancyShow2 {
   text-transform: uppercase;
   padding: 5px;
 } */
+
+.aside {
+    background: rgba(114,146,176,0.1);
+    border: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+}
+
+img.tiny {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
