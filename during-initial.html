@@ -9,14 +9,31 @@
     <meta name="author" content="SitePoint" />
 
 <!--   Boostrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    
+      <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    
+    
+    <script>
+      $(function() {
+        $("#exams").load("accommodation-ex.html");
+        $("#teaching").load("classroom-ex.html");
+      });
+    </script>
     
   </head>
 
@@ -217,6 +234,11 @@
         <p>
           As a <strong>reminder</strong>, temporary accommodations are typically established for one semester. Permanent supports are typically established for the expected duration of their program. However, you may choose to establish and revisit accommodation supports each year, if that's the case enter an expiry date after one full academic year and explain to the student the justification.
         </p>
+        
+<!--         Accordion Exam Accommodations -->
+        <div id="exams"></div>
+<!--         End accordion exam accommodations -->
+     
         </div>
       </div>
       
@@ -239,6 +261,10 @@
       <p>
         Explain student roles and responsibilities (as applicable), generate letters of support, explain where to find the letters of support and ask that the student carefully read them over prior to providing professors with a copy.
       </p>
+          
+          <!--         Accordion Exam Accommodations -->
+        <div id="teaching"></div>
+<!--         End accordion exam accommodations -->
          
         </div>
       </div>
@@ -294,20 +320,18 @@
       <div class="row">
         <div class="col-12">
       
-      <h5>
+      <h2 class="neatFont">
         Conclude by setting clear service expectations
-      </h5>
+      </h2>
       <p>
-        Refer student to reception to book a follow up app't, as needed. E.g. bursary application, PEa assessment information, learning strategies, etc.
-     Inform student of how to contact you by email and not MS Teams chat.     </p>
+        Refer student to reception to book a follow up app't, as needed. E.g. bursary application, PEA assessment information, learning strategies, etc.
+     Inform student of how to contact you by email and not MS Teams chat.</p>
         </div>  
         </div>
     </div>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
     
   </body>
 </html>
