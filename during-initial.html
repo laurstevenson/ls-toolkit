@@ -4,9 +4,11 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>The HTML5 Herald</title>
+    <title>LS Toolkit: Initial appointment</title>
     <meta name="description" content="The HTML5 Herald" />
     <meta name="author" content="SitePoint" />
+    
+    
 
 <!--   Boostrap CSS -->
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -32,8 +34,10 @@
       $(function() {
         $("#exams").load("accommodation-ex.html");
         $("#teaching").load("classroom-ex.html");
+        $("#vertical-nav").load("navbar.html");
       });
     </script>
+  
     
   </head>
 
@@ -45,11 +49,16 @@
       />
     </div>
     
+    <!--         Vertical navbar -->
+        <div id="vertical-nav"></div>
+<!--         End vertical navbar -->
+    
     <div class="container">
       <h2 class="neatFont">
         Provide general (yet pertinent) information<br>
         & set clear expectations
       </h2>
+      <a name="introduction"></a>
       <div class="row">
         <div class="col-12">
           <p>
@@ -111,6 +120,7 @@
 
     <div class="container">
       <div class="row">
+        <a name="ventus"></a>
         <div class="col-12 aside">
       <h2 class="neatFont">
         Assess academic accommodations need<br>
@@ -145,6 +155,9 @@
         subject to documented changes in the medical condition, course related
         content/context, and course format.
       </p>
+          <p>
+            <strong>Don't forget to activatethe student's Ventus profile!</strong>  If you don't do this step, students will not see their academic accommodations and professors will not receive an automated email to confirm these supports!
+          </p>
           </div>
       </div>
       <hr>
@@ -152,6 +165,7 @@
     
     <div class="container">
       <div class="row">
+        <a name="discuss"></a>
         <div class="col-12">
           <h2 class="neatFont">
             Engage in a collaborative discussion with the student
@@ -219,7 +233,7 @@
       
       <div class="row">
       <div class="col-12 aside">
-        
+        <a name="exams"></a>
       <h2 class="neatFont">
         Establish Exam Accommodations
       </h2>
@@ -234,6 +248,7 @@
         <p>
           As a <strong>reminder</strong>, temporary accommodations are typically established for one semester. Permanent supports are typically established for the expected duration of their program. However, you may choose to establish and revisit accommodation supports each year, if that's the case enter an expiry date after one full academic year and explain to the student the justification.
         </p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/PHXsgcxTQS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
 <!--         Accordion Exam Accommodations -->
         <div id="exams"></div>
@@ -244,6 +259,7 @@
       
       <div class="row">
         <div class="col-12">
+          <a name="teaching"></a>
       <h2 class="neatFont">
         Establish Teaching Accommodations
       </h2>
@@ -269,12 +285,17 @@
         </div>
       </div>
       
+      
       <div class="row row-cols-3 aside">
         <div class="col">
       <h4 class="neatFont2">
         
           
-        Provide tailored information, if applicable:</h4></div>
+        Provide tailored information, if applicable:</h4>
+        <p>
+          <strong>Faculty of Common Law:</strong><br>
+          Prepare an Academic Accommodations letter for students to share with Jessica Simon.
+          </p></div>
         <div class="col">
           <strong>Saint-Paul University Students:</strong><br>
           Prepare an Academic Accommodations letter for students to share with professors and Melanie Hotte for undergraduate studies, and Francine Quesnel for graduate studies. An updated letter will need to be generated each academic year.
@@ -286,6 +307,7 @@
       <hr>
         
       <div class="row">
+        <a name="procedures"></a>
         <div class="col-12">
            <h2 class="neatFont">
         Review exam procedures
@@ -328,6 +350,9 @@
      Inform student of how to contact you by email and not MS Teams chat.</p>
         </div>  
         </div>
+      
+      
+      
     </div>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
         <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -14,50 +18,62 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <title>Hello, world!</title>
+    <title>Learning Specialist Toolkit</title>
+    
+    <script> 
+    console.clear();
+
+const app = (() => {
+	let body;
+	let menu;
+	let menuItems;
+	
+	const init = () => {
+		body = document.querySelector('body');
+		menu = document.querySelector('.menu-icon');
+		menuItems = document.querySelectorAll('.nav__list-item');
+
+		applyListeners();
+	}
+	
+	const applyListeners = () => {
+		menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+	}
+	
+	const toggleClass = (element, stringClass) => {
+		if(element.classList.contains(stringClass))
+			element.classList.remove(stringClass);
+		else
+			element.classList.add(stringClass);
+	}
+	
+	init();
+})();
+
+    </script>
   </head>
   <body>
   
     
 
-<ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" href="index.html">Home</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Prior to Initial</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="pre-initial.html">Documentation</a>
-      <a class="dropdown-item" href="pre-initial.html">Setting up</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+<div class="container">
+  <div class="menu-icon">
+	<span class="menu-icon__line menu-icon__line-left"></span>
+	<span class="menu-icon__line"></span>
+	<span class="menu-icon__line menu-icon__line-right"></span>
+</div>
+
+<div class="nav">
+	<div class="nav__content">
+		<ul class="nav__list">
+      <li class="nav__list-item"><a href="/index.html">Home</a></li>
+      <li class="nav__list-item"><a href="/pre-initial.html">Prior to Initial</a></li>
+      <li class="nav__list-item"><a href="/during-initial.html">Initial appointment</a></li>
+      <li class="nav__list-item"><a href="/after-initial.html">After the Initial</a></li>
+		</ul>
+	</div>
+</div>
     </div>
-      </li>
-   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Initial appointment</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="during-initial.html">General information</a>
-      <a class="dropdown-item" href="#">Teaching accommodations</a>
-      <a class="dropdown-item" href="#">Exam accommodations</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      </li>
-        <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">After Initial</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="after-initial.html">Complete POC</a>
-      <a class="dropdown-item" href="after-initial.html">Next steps</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
 
    
     
@@ -132,10 +148,7 @@
     </div>
 
     
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
     
   </body>
 </html>
