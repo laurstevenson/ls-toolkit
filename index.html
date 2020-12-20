@@ -1,154 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-     <link
+    <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-        <!-- import the webpage's stylesheet -->
+
+    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
     <title>Learning Specialist Toolkit</title>
-    
-    <script> 
-    console.clear();
 
-const app = (() => {
-	let body;
-	let menu;
-	let menuItems;
-	
-	const init = () => {
-		body = document.querySelector('body');
-		menu = document.querySelector('.menu-icon');
-		menuItems = document.querySelectorAll('.nav__list-item');
-
-		applyListeners();
-	}
-	
-	const applyListeners = () => {
-		menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
-	}
-	
-	const toggleClass = (element, stringClass) => {
-		if(element.classList.contains(stringClass))
-			element.classList.remove(stringClass);
-		else
-			element.classList.add(stringClass);
-	}
-	
-	init();
-})();
-
+  <script>
+      $(function() {
+        $("#h-navbar").load("h-navbar.html");
+      });
     </script>
+    
   </head>
   <body>
-  
     
-
-<div class="container">
-  <div class="menu-icon">
-	<span class="menu-icon__line menu-icon__line-left"></span>
-	<span class="menu-icon__line"></span>
-	<span class="menu-icon__line menu-icon__line-right"></span>
-</div>
-
-<div class="nav">
-	<div class="nav__content">
-		<ul class="nav__list">
-      <li class="nav__list-item"><a href="/index.html">Home</a></li>
-      <li class="nav__list-item"><a href="/pre-initial.html">Prior to Initial</a></li>
-      <li class="nav__list-item"><a href="/during-initial.html">Initial appointment</a></li>
-      <li class="nav__list-item"><a href="/after-initial.html">After the Initial</a></li>
-		</ul>
-	</div>
-</div>
-    </div>
-
    
     
     <div class="container">
       
-      <img class="mw-100 intro" src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FScreen%20Shot%202020-11-18%20at%209.09.36%20AM.png?v=1605708599207" alt="online learning">
-    
-    
-    <section>
-      <div class="container">
-        
+           <!--   Main navbar -->
+        <div id="h-navbar"></div>
+<!--         End Main navbar -->
+      <img
+        class="mw-100 intro"
+        src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FScreen%20Shot%202020-11-18%20at%209.09.36%20AM.png?v=1605708599207"
+        alt="online learning"
+      />
       
-    <div class="section--row">
-      <div class="row">
-        <div class="col-s-12 col-sm-7">
-          <div class="section--block">
-            <p class="is-hero fancyShow">
-              As a Learning Specialist, your role and responsibilities are essential to the Academic Accommodation process. 
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-5">
-          <div class="section--block">
-            <ul class="fancyShow2">
-               <li>Evaluate disability documentation to carefully consider the functional limitations</li>
-              <li>Assess needs which may impact the academic or campus experience.</li>
-              <li>Establish a reasonable and individualized academic accommodations plan which may include: Exam accommodations, Teaching accommodations, Transcriptions accommodations and Learning strategies.</li>
-              <li>Offer learning strategies to build and improve academic skills based on challenges and strengths.</li>
-              <li>Assist students, professors and other support staff to ensure that approved accommodations are implemented, while maintaining confidentiality.</li>
-              <li>Providing student with the pertinent information about services and supports available.</li>
-            </ul>
+      
+
+      <div class="container">
+        <div class="section--row">
+          <div class="row">
+            <div class="col-s-12 col-sm-7">
+              <div class="section--block">
+                <p class="is-hero fancyShow">
+                  As a Learning Specialist, your role and responsibilities are
+                  essential to the Academic Accommodation process.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="section--block">
+                <ul class="fancyShow2">
+                  <li>
+                    Evaluate disability documentation to carefully consider the
+                    functional limitations
+                  </li>
+                  <li>
+                    Assess needs which may impact the academic or campus
+                    experience.
+                  </li>
+                  <li>
+                    Establish a reasonable and individualized academic
+                    accommodations plan which may include: Exam accommodations,
+                    Teaching accommodations, Transcriptions accommodations and
+                    Learning strategies.
+                  </li>
+                  <li>
+                    Offer learning strategies to build and improve academic
+                    skills based on challenges and strengths.
+                  </li>
+                  <li>
+                    Assist students, professors and other support staff to
+                    ensure that approved accommodations are implemented, while
+                    maintaining confidentiality.
+                  </li>
+                  <li>
+                    Providing student with the pertinent information about
+                    services and supports available.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <hr />
+
+      <section>
+        <div class="container">
+          <h1 class="neatFont">Topics covered:</h1>
+          <div class="row justify-content-center"></div>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-3 text-center home-section">
+              <img
+                class="icon"
+                src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FLogo%203%20Ventus%20account.png?v=1605575357132"
+                alt="img"
+              />
+              <p>
+                <strong>Prior to the initial appointment</strong><br /><br />
+                Overiew of documentation requirements<br />
+                Pre-meetings notes in Ventus<br />
+              </p>
+            </div>
+            <div class="col-md-3 text-center home-section">
+              <img
+                class="icon"
+                src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FLogo%203%20Ventus%20account.png?v=1605575357132"
+                alt="img"
+              />
+              <strong>The Initial appointment</strong><br /><br />
+              What information to share with the student?<br />
+              Which questions should I be asking the student?<br />
+              Setting up the academic accommodation plan<br />
+            </div>
+            <div class="col-md-3 text-center home-section">
+              <img
+                class="icon"
+                src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FLogo%203%20Ventus%20account.png?v=1605575357132"
+                alt="img"
+              />
+              <strong>After the initial appointment</strong><br /><br />
+              Follow-up meetings<br />
+              Meeting notes and locking POC<br />
+            </div>
+          </div>
         </div>
       </section>
-    <hr>
-    
-    <div class="container">
-      <h1 class="neatFont">Topics covered:</h1>
-      <div class="row justify-content-center">
-      </div>
     </div>
-
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-3 text-center home-section">
-          <img class="icon" src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FLogo%203%20Ventus%20account.png?v=1605575357132" alt="img">
-          <p>
-            
-            <strong>Prior to the initial appointment</strong><br><br>
-        Overiew of documentation requirements<br>
-            Pre-meetings notes in Ventus<br>
-          </p>
-        </div>
-        <div class="col-md-3 text-center home-section">
-          <img class="icon" src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FLogo%203%20Ventus%20account.png?v=1605575357132" alt="img">
-          <strong>The Initial appointment</strong><br><br>
-          What information to share with the student?<br>
-          Which questions should I be asking the student?<br>
-          Setting up the academic accommodation plan<br>
-        </div>
-        <div class="col-md-3 text-center home-section">
-          <img class="icon" src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FLogo%203%20Ventus%20account.png?v=1605575357132" alt="img">
-          <strong>After the initial appointment</strong><br><br>
-          Follow-up meetings<br>
-          Meeting notes and locking POC<br>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    
-   
-    
   </body>
 </html>
