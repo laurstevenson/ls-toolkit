@@ -27,26 +27,47 @@
   <script>
       $(function() {
         $("#h-navbar").load("h-navbar.html");
+        $("#footer").load("footer.html");
       });
+    </script>
+    
+    <script>
+      $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
     </script>
     
   </head>
   <body>
-    
-   
-    
     <div class="container">
       
-           <!--   Main navbar -->
+            <!--   Main navbar -->
         <div id="h-navbar"></div>
 <!--         End Main navbar -->
+     
       <img
         class="mw-100 intro"
         src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FScreen%20Shot%202020-11-18%20at%209.09.36%20AM.png?v=1605708599207"
         alt="online learning"
       />
-      
-      
+    
 
       <div class="container">
         <div class="section--row">
@@ -141,6 +162,14 @@
           </div>
         </div>
       </section>
+      
+      <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top bg-dark" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">Top</a>
+      
+                  <!--  Footer -->
+        <div id="footer"></div>
+<!--         End Footer -->
+
+      
     </div>
   </body>
 </html>

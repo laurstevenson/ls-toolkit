@@ -1,4 +1,4 @@
-/* CSS files add styling rules to your content */
+
 
 body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -54,7 +54,7 @@ img.intro {
 }
 
 img.initial {
- padding-left: 20px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -142,140 +142,66 @@ img.tiny {
   margin: auto;
 }
 
-/* vertical navbar */
+/* vertical navbar during initial page */
 
-/* .upper-onepage-navigation {
+.side-nav {
   position: fixed;
-  z-index: 99999;
-  color: #202122;
-  top: 50%;
-  right: 40px;
-  transform: translateY(-50%);
-  overflow: hidden;
-  width: 300px;
-  direction: rtl;
-}
-
-.upper-onepage-navigation li {
-  display:  block;
-  position: relative;
-  height: 12px;
-  border: 2px solid rbga(0,0,0,0.9);
-  border-radius: 100%;
-  margin-top: 0 0 15px 0;
-}
-
-.upper-onepage-navigation li a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radiuls: 100%;
-}
-
-.upper-onepage-navigation li a.upper-active {
-  background: rgba(0,0,0,0.9);
-}
-
-.upper-onepage-navigation li span.pag-title-wrap {
-  position: absolute;
-  width: 200px;
-  min-height: 1.5em;
-  height: 100%;
-  right: 13px;
-  overflow: hidden;
-  text-transform: capitalize;
-  top: -5px;
-}
-
-.upper-onepage-nagivation li span.pag-title {
-  position: absolute;
-  top: -5px;
-  opacity: 0;
-  text-aligne: right;
-  width: 200px;
-  right: -200px;
-  transition: all .5 ease;
-  color: rgba(0,0,0,0.3);
-  font-weight: bold;
-  backface-visibility: hidden;
-  transform: translateZ(0) scale(1.0, 1.0);
-  cursor: default;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-.upper-onepage-navigation li:hover span.pag-title {
-  right: 13px;
-  opacity: 1;
-  color: #0a0a26;
-  font-size: 16px;
-  text-transform: unset;
-  letter-spacing: -0.5px;
-}
-
-.upper-onepage-navigation {
-  transition: opacity .3s linear;
-}
-
-a {
-  margin: 0;
-  font-weight: normal;
-}
-
-a:active, a:hover {
-  outline: 0;
-}
-
-ul li {
-  line-height: 1.5em;
-  margin-left: 20px;
-  margin-top: .8em;
-  margin-bottom: .8em;
-}
-
-ul, li {
-  list-style: disc;
-} */
-
-.upper-onepage-navigation {
-  position: fixed;
-  z-index: 99999;
   right: 100px;
-  top: 50%;
-  direction: rtl;
-  line-height: 1.5em;
+  top: 45%;
+}
+
+.side-nav-link {
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  color: #000;
+}
+
+.side-nav-link:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.item-container {
+  transition: width 500ms;
+  transition-timing-function: ease;
+  float: right;
+  width: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 25px;
+}
+
+.item-container:hover {
+  width: 200px;
+  white-space: nowrap;
   overflow: hidden;
 }
-
-.upper-onepage-navigation li::marker {
-  font-size: 2rem;
-}
-
-
-.upper-onepage-navigation {
-  transition: opacity .3s linear;
-}
-
-.upper-onepage-navigation li a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radiuls: 100%;
-}
-
-
-
-/* .upper-onepage-navigation li {
-  display: inline-block;
-  text-align: left;
-} */
-
 
 ul {
   list-style-type: circle;
 }
+
+/* Main navbar */
+
+/* Button return to top */
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display:none;
+}
+
+/* Footer */
+
+.site-footer {
+  padding: 2.5rem 0;
+  background-color: #ffff;
+  text-align: center;
+  border-top: .05rem solid #e5e5e5;
+}
+
 
