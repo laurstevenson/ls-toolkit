@@ -185,6 +185,36 @@ ul {
 
 /* Main navbar */
 
+.nav-item {
+  padding: 5px;
+  margin: 2px;
+  text-transform: capitalize;
+}
+
+.nav-link {
+  border-bottom: 3px solid #fff;
+  transition: all 0.25s linear;
+  position: relative;
+}
+
+.nav-link:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ff8cbc;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s linear;
+}
+
+.nav-link:hover:before {
+  transform: scale(1);
+}
+
 /* Button return to top */
 
 .back-to-top {
@@ -204,4 +234,9 @@ ul {
   border-top: .05rem solid #e5e5e5;
 }
 
-
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
