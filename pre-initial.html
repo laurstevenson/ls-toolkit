@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Toolkit - Prior to Initial</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
    <!-- Bootstrap CSS -->
-    <link
+ <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -22,12 +22,47 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
+ <script>
+      $(function() {
+        $("#h-navbar").load("h-navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  
+      
+    <script>
+      $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
 
+});
+    </script>
+  
 </head>
 
 <body>
   
   <div class="container">
+    
+      <!--   Main navbar -->
+        <div id="h-navbar"></div>
+<!--         End Main navbar -->
+    
     <img src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FPrior%20to%20the%20Initial%20Appointment%20(1).png?v=1605914244139" alt="notepad">
   </div>
   
@@ -54,10 +89,10 @@
       </div>
       </div>
     </section>
-    <hr>
+    
     
     <section>
-    <div class="section--row">
+    <div class="section--row aside">
       <div class="row">
         <div class="col-sm">
           <div class="section--block">
@@ -90,7 +125,7 @@
       </div>
       </div>
     </section>
-    <hr>
+    
     
     <h4 class="neatFont2">
       But wait! There's more...
@@ -111,7 +146,7 @@
   <div class="container">
     <hr>
     <section>
-      <div class="section--row">
+      <div class="section--row aside">
         <div class="row">
           <div class="row middle-xs">
             
@@ -135,7 +170,7 @@
             </div>
             <div class="col-6 col-md-4">
               <div class="section--block">
-                <img class="photo initial" src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FUntitled%20design%20(1).png?v=1606581259161" alt="writing on notepad">
+                <img class="photo initial" src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FUntitled%20design%20(2).png?v=1609184857647" alt="writing on notepad">
               </div>
             </div>
           </div>
@@ -165,12 +200,15 @@
     <p>
       Your notes are prepped and now you're ready to meet with the student! What happens next? Click on the Initial appointment link to read through what happens during the initial meeting. There, we'll review what information to share with students during this meeting, what questions should I be asking the student, and how to set up the academic accommodation plan.
     </p>
+    
+      <!--  Footer -->
+        <div id="footer"></div>
+<!--         End Footer -->
+
   </div>
   
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
+     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top bg-dark" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">Top</a>
+  
+
 </body>
 </html>

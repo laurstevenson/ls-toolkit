@@ -36,7 +36,32 @@
         $("#teaching").load("classroom-ex.html");
         $("#vertical-nav").load("navbar.html");
         $("#h-navbar").load("h-navbar.html");
+        $("#footer").load("footer.html");
       });
+    </script>
+    
+        
+    <script>
+      $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
     </script>
   
     
@@ -355,11 +380,15 @@
         </div>  
         </div>
       
+      <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top bg-dark" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">Top</a>
       
+              <!--  Footer -->
+        <div id="footer"></div>
+<!--         End Footer -->
       
     </div>
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
    
     
   </body>
