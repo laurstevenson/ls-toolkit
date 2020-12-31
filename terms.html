@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <title>LS Toolkit: Terminology</title>
+
+  <script>
+      $(function() {
+        $("#h-navbar").load("h-navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    
+    <script>
+      $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+    </script>
+    
+  </head>
+  <body>
+    
+    <div class="container">
+       <!--   Main navbar -->
+        <div id="h-navbar"></div>
+<!--         End Main navbar -->
+      <img src="https://cdn.glitch.com/b05efcea-bfa4-496d-ac87-a5bffde1de59%2FTERMINOLOGY.png?v=1609430228735" alt="terminology word">
+    </div>
+    
+    <div class="container">
+      <h2 class="neatFont">
+        Acronym table
+      </h2>
+      <table style="width:100%">
+        <tr>
+          <th>Acronym</th>
+          <th>Name</th>
+          <th>Definition</th>
+        </tr>
+        <tr>
+          <td><strong>POC</strong></td>
+          <td>Point of Contact</td>
+          <td>A log in Ventus to write/include all in-person or phone interactions with students</td>
+        </tr>
+        <tr>
+          <td><strong>BSWD</strong></td>
+          <td>Bursary for Students with Disabilities</td>
+          <td>Bursary for services and equipment available through OSAP</td>
+        </tr>
+        <tr>
+          <td><strong>ATC</strong></td>
+          <td>Adapted Technology Centre</td>
+          <td>Peer mentoring centre for strategy development and technology training</td>
+        </tr>
+        <tr>
+          <td><strong>HRO</strong></td>
+          <td>Human Rights Office</td>
+          <td>Advocates for and provides advice to community members concerning human rights issues arising at UO</td>
+        </tr>
+        <tr>
+          <td><strong>AFE</strong></td>
+          <td>Aide Financière du Québec</td>
+          <td>Provincial student loan funding for residents of Québec</td>
+        </tr>
+        <tr>
+          <td><strong>OSAP</strong></td>
+          <td>Ontario Student Assistance Program</td>
+          <td>Grants and loans for residents of Ontario</td>
+        </tr>
+        <tr>
+          <td><strong>AFE 1088</strong></td>
+          <td>Formulaire 1088</td>
+          <td>Form used to apply for bursaries relating to services and equipment with AFE, similar to BSWD</td>
+        </tr>
+        <tr>
+          <td><strong>AWHC</strong></td>
+          <td>Academic Writing Help Centre</td>
+          <td>Service on campus to support with writing strategies and development</td>
+        </tr>
+        <tr>
+          <td><strong>TLSS</strong></td>
+          <td>Teaching & Learning Support Service</td>
+          <td>Learning Management System support, consultations</td>
+        </tr>
+      </table>
+      <br>
+    </div>
+    
+    <div class="container">
+      
+         <!--  Footer -->
+        <div id="footer"></div>
+<!--         End Footer -->
+     </div>
+  </body>
+</html>
