@@ -240,3 +240,50 @@ ul {
   padding: 0;
   text-align: left;
 }
+
+:root {
+  --mainColor: #ff8cbc;
+}
+
+a.footer-link-item {
+  text-decoration: none;
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a.footer-link-item:hover {
+  background-size: 4px 50px;
+}
+
+/* Terminology table */
+
+table, th, td {
+  border: 2px solid #000;
+  padding: 5px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 5px;
+}
+
+th {
+  text-align: center;
+  font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
+  font-size: 1.25em;
+  color: #706f6d;
+}
+
+td:hover {
+  color: #b54c81;
+}
