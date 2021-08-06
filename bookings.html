@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <title>LS Toolkit: Bookings</title>
+
+  <script>
+      $(function() {
+        $("#h-navbar").load("h-navbar.html");
+        $("#footer").load("footer.html");
+        $("#faq-bookings").load("faq-bookings.html");
+      });
+    </script>
+    
+    <script>
+      $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+    </script>
+    
+  </head>
+  <body>
+    
+    <div class="container">
+       <!--   Main navbar -->
+        <div id="h-navbar"></div>
+<!--         End Main navbar -->
+    </div>
+    
+    <div class="container">
+    <h2 class="neatFont">
+      Microsoft Bookings
+      </h2>
+      <div class="row">
+        <div class="col-12">
+          <h4 class="neatFont2">
+            Why Microsoft (MS) Bookings?
+          </h4>
+          <p>
+            In theme with the Ventus updates that are meant to empower students to select academic accommodations per course, we will carry out a similar strategy for schedule appointments with Learning Specialists. We've discussed using Microsoft Bookings in the past, now it's time to put the plan into action!
+          </p>
+          <p>
+            It is important to note that students will only see your Bookings calendar. They will <strong>not</strong> see your Outlook calendars unless you specifically authorize them access to it.
+          </p>
+          <p>
+            MS Bookings, Outlook, and MS Teams work simultaneously. However, there are important steps that can only be done using MS Bookings. This guide is meant to help you get familiar with the ins and outs of Bookings. Topics covered include:
+          </p>
+          <ul>
+            <li>Getting started: How to access your MS Bookings Calendar/Page</li>
+            <li>What your students will see</li>
+            <li>What happens when a student books an appointment?</li>
+            <li>Cancelling an appointment</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+<!--       <hr> -->
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 aside">
+          <h4 class="neatFont2">
+            Getting Started
+          </h4>
+          <p>
+            To log in to MS Bookings, type in the url <a href="https://www.book.ms">book.ms</a> in your browser and sign in using your UO credentials. You'll be redirected to your MS Bookings Welcome page. Access your Calendar. 
+          </p>
+          <p>
+            <strong>Note:</strong> You can also see your scheduled meetings in Outlook. However, the Bookings Calendar view will accurately show your appointment and buffer times, so it's important that you don't rely too much on Outlook for these meetings.
+          </p>
+          <p>
+            You must add summer hours, personal time off, federal/provincial holidays, and 15-minute break times in Outlook. Your calendars already include the following:
+          </p>
+          <ul>
+            <li>Work hours</li>
+            <li>Lunch break</li>
+            <li>AM doc time</li>
+            <li>On call hours</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-6">
+          <h4 class="neatFont2">
+            What your students will see
+          </h4>
+          <p>
+            Students will be able to select a service (appointment type), date and time based on your configured availability.
+          </p>
+        </div>
+        <div class="col-6 col-6">
+          <h4 class="neatFont2">
+            What happens when a student books an appointment?
+          </h4>
+          <ul>
+            <li>An email confirmation is sent to both the student and the staff member booked. The student's confirmation email also includes a link to modify or cancel the appointment</li>
+            <li>A calendar entry is created into your MS Bookings page and Outlook calendar</li>
+            <li>A MS Teams join link will be included for the student to follow at the appointment time. The MS Teams information is also included in your Outlook calendar and MS Bookings page</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/EidBr4zakx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 aside">
+          <h4 class="neatFont2">
+            Schedule an appointment
+          </h4>
+          <ul>
+            <li>To schedule a single appointment through your MS Bookings page, click on <em>New Booking</em> and select the appointment type</li>
+            <li>Enter the student's information in the <em>Customer name, customer email, phone number</em> and <em>student number</em> fields</li>
+            <li>Select a date and start time for the appointment. Your 15-minute buffer time will automatically be applied at the end</li>
+            <li>Don't forget to click <em>Save</em>!</li>
+          </ul>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/jIffMFsBT8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+           <h4 class="neatFont2">
+            Cancel an appointment
+          </h4>
+          <ul>
+            <li>In your MS Bookings calendar page, find and select the appointment you wish to cancel</li>
+            <li>Select <em>Cancel</em> and provide a reason for cancellation to the student</li>
+            <li>Lastly, click on <em>Cancel Booking</em>, this will notify the student via email and remove the entry from your calendar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="neatFont2">
+            FAQ
+          </h4>
+          
+          <!--         Accordion Exam Accommodations -->
+        <div id="faq-bookings"></div>
+<!--         End accordion exam accommodations -->
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container">
+      
+         <!--  Footer -->
+        <div id="footer"></div>
+<!--         End Footer -->
+     </div>
+  </body>
+</html>
