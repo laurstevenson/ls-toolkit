@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <title>LS Toolkit: Ventus Tutorials</title>
+
+    <script>
+      $(function() {
+        $("#h-navbar").load("h-navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 50) {
+            $("#back-to-top").fadeIn();
+          } else {
+            $("#back-to-top").fadeOut();
+          }
+        });
+        // scroll body to 0px on click
+        $("#back-to-top").click(function() {
+          $("#back-to-top").tooltip("hide");
+          $("body,html").animate(
+            {
+              scrollTop: 0
+            },
+            800
+          );
+          return false;
+        });
+
+        $("#back-to-top").tooltip("show");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!--   Main navbar -->
+      <div id="h-navbar"></div>
+      <!--         End Main navbar -->
+    </div>
+
+    <div class="container">
+      <h2 class="neatFont">
+        Ventus Tutorials - Student Portal
+      </h2>
+      <div class="row">
+        <div class="col">
+          <br>
+          <br>
+          <h4 class="neatFont2">
+            Selecting Accommodations
+          </h4>
+          <br>
+          <p>
+            In order for academic accommodations to display in the Instructor portal, students must select and confirm wich accommodations are necessary in each course.<br>
+            <br>
+            Also available in <a href="https://youtu.be/tP9-MvteEBo">French</a>
+          </p>
+        </div>
+        <div class="col">
+          <iframe
+            width="480"
+            height="280"
+            src="https://www.youtube.com/embed/bWmWwYBIlc4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <br>
+          <br>
+          <h4 class="neatFont2">
+            Confirming Exams
+          </h4>
+          <br>
+          <p>
+            Students need to confirm their participation and which exam accommodations to access for every quiz, midterm, and final examination. This video explains how to confirm exams in Ventus and important deadlines to keep in mind.<br>
+            <br>
+            Also available in <a href="https://youtu.be/Q2Gg66eCecs">French</a>
+          </p>
+        </div>
+        <div class="col">
+          <iframe width="480" height="280" src="https://www.youtube.com/embed/eZ2d9zbcSD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+         <div class="row">
+        <div class="col">
+          <br>
+          <br>
+          <h4 class="neatFont2">
+            Uploading Documentation & Intake Questionnaire
+          </h4>
+          <br>
+          <p>
+            In preparation for their intake with Academic Accommodations, students can upload their own medical documentation in Ventus. This sends an alert to our team that a student is looking to register wth our service.<br>
+            <br>
+            Also available in <a href="https://youtu.be/qnbHtijZsXk">French</a>
+          </p>
+        </div>
+        <div class="col">
+          <iframe width="480" height="280" src="https://www.youtube.com/embed/RVrFpxKJhZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+          <div class="row">
+        <div class="col">
+          <br>
+          <br>
+          <h4 class="neatFont2">
+            Navigating Ventus
+          </h4>
+          <br>
+          <p>
+            General overview of the student Ventus portal. Important change to note that is the <em>To-do</em> tab has been repurposed for the Ventus video tutorials<br>
+            <br>
+            Also available in <a href="https://youtu.be/wj7XpC0RLPs">French</a>
+          </p>
+        </div>
+        <div class="col">
+          <iframe width="480" height="280" src="https://www.youtube.com/embed/vx4u1pzWIzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!--       <hr> -->
+    </div>
+
+    <div class="container">
+      <!--  Footer -->
+      <div id="footer"></div>
+      <!--         End Footer -->
+    </div>
+  </body>
+</html>
