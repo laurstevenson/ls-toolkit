@@ -137,6 +137,18 @@ img.tiny {
   padding-top: 10px;
 }
 
+img.documentation {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+img.docu {
+  display: block;
+  margin: auto;
+  width: 95%;
+}
+
 .video {
   display: block;
   margin: auto;
